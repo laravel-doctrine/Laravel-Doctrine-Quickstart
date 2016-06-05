@@ -57,7 +57,7 @@
 
 										<!-- Task Delete Button -->
 										<td>
-											<form action="/task/{{ $task->getId() }}" method="POST">
+											<form action="{{ url('task')}}/{{ $task->getId() }}" method="POST">
 												{{ csrf_field() }}
 												{{ method_field('DELETE') }}
 
